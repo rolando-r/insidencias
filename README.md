@@ -208,4 +208,55 @@ public class InsidenciasContext : DbContext
 **dotnet ef migrations add InitialCreate --project ./Infrastructure/ --startup-project ./API/ --output-dir ./Data/Migrations**
 
 - ​       Aplicar la migracion a la base de datos:
-dotnet ef database update --project ./Infrastructure/ --startup-project ./API/  
+dotnet ef database update --project ./Infrastructure/ --startup-project ./API/
+
+# Controllers
+
+- ​       Crea el archivo **BaseApiController** que permiteel control de la API a la base de datos. Implementa el siguiente codigo:
+
+```c#
+using Microsoft.AspNetCore.Mvc;
+namespace API.Controllers;
+
+    [ApiController]
+    [Route("[controller]")]
+    public class BaseApiController : ControllerBase{
+    }
+```
+
+- ​       En la carpeta API, dentro de Properties, en **launchSettings.json**, cambia el localhost al puerto 5000 (Si es una Db local)
+
+- ​       Has el controllador de cada entidad con **(NameController)**
+
+# Extensions
+
+- ​       Dentro de la carpeta API, crea la carpeta **Extensions**, ahí crea el archivo **ApplicationServiceExtension** y agrega el siguiente codigo:
+
+```c#
+namespace API.Extensions;
+public static class ApplicationServiceExtension
+{
+        public static void ConfigureCors(this IServiceCollection services) =>
+        services.AddCors(options =>
+        {
+            options.AddPolicy("CorsPolicy",builder=>
+            builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+        });
+}
+```
+
+
+- ​       Aplica los servicios en Program.cs:
+
+```c#
+builder.Services.ConfigureCors();
+```
+Recuerda usar la extension **using API.Extensions;**
+
+- ​       Aplica el servicio en Program.cs:
+
+```c#
+app.UseCors("CorsPolicy");
+```
