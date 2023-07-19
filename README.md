@@ -124,3 +124,87 @@ Nota: Recuerde realizar la importaciones de librerias using
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 ```
+
+# Creando Entidades y Configurations
+
+- ​       Crea la carpeta **Entities** dentro de Core y haz las entidades requeridas.
+
+**Entidad:** 
+
+```c#
+namespace Core.Entities;
+public class Insidencia
+{
+    public string ? IdInsidencia { get; set; }
+    public string ? IdEstado { get; set; }
+    public Estado ? Estado { get; set; }
+    public ICollection<Area> ? Areas { get; set; }
+}
+```
+
+- ​       Crea la carpeta **Data** dentro de infrastructure.
+- ​       Crea la carpeta **Configuration** dentro de Data y haz la configuracion de cada una de las entidades.
+
+```c#
+using Core.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace Infrastructure.Data.Configuration;
+
+public class ContactoConfiguration : IEntityTypeConfiguration<Contacto>
+{
+    public void Configure(EntityTypeBuilder<Contacto> builder)
+    {
+        builder.ToTable("Contactos");
+
+        builder.HasKey(p => p.IdContacto);
+        builder.Property(p => p.IdContacto)
+        .ValueGeneratedNever();
+
+        builder.Property(p=> p.Descripcion)
+        .IsRequired()
+        .HasMaxLength(120);
+
+        builder.Property(p=> p.FechaInsidencia)
+        .IsRequired()
+        .HasColumnType("date");
+
+        builder.HasOne(p => p.Usuario)
+        .WithMany(e => e.Contactos)
+        .HasForeignKey(i => i.IdUsuario);
+    }
+}
+```
+  
+- ​       Crea el archivo **NameDbContext** que permite la conexion a la base de datos.
+
+```c#
+using System.Reflection;
+using Core.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace Infrastructure.Data;
+
+public class InsidenciasContext : DbContext
+{
+    public InsidenciasContext(DbContextOptions<InsidenciasContext> options) : base(options)
+    {
+    }
+    public DbSet<Area> Areas { get; set; }
+    public DbSet<AreaUsuario> AreaUsuarios { get; set; }
+    public DbSet<CategoriaContacto> CategoriaContactos { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+    }
+}
+```
+
+- ​       Para la creación de las migraciones
+**dotnet ef migrations add InitialCreate --project ./Infrastructure/ --startup-project ./API/ --output-dir ./Data/Migrations**
+Aplicar la migracion a la base de datos:
+dotnet ef database update --project ./Infrastructure/ --startup-project ./API/  
