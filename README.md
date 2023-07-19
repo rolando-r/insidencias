@@ -206,5 +206,6 @@ public class InsidenciasContext : DbContext
 
 - ​       Para la creación de las migraciones
 **dotnet ef migrations add InitialCreate --project ./Infrastructure/ --startup-project ./API/ --output-dir ./Data/Migrations**
-Aplicar la migracion a la base de datos:
+
+- ​       Aplicar la migracion a la base de datos:
 dotnet ef database update --project ./Infrastructure/ --startup-project ./API/  
