@@ -7,4 +7,7 @@ public class Lugar
      public string ? IdArea { get; set; }
      public Area ? Area { get; set; }
      public ICollection <AreaUsuario> ? AreaUsuarios { get; set;}
+     public ICollection<Insidencia> ? Insidencias { get; set; }
+
+     
 }

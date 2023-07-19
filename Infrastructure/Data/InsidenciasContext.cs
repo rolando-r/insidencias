@@ -1,3 +1,4 @@
+using System.Reflection;
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,4 +24,10 @@ public class InsidenciasContext : DbContext
     public DbSet<TipoDocumento> TipoDocumentos { get; set; }
     public DbSet<TipoInsidencia> TipoInsidencias { get; set; }
     public DbSet<Usuario> Usuarios { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+    }
 }
