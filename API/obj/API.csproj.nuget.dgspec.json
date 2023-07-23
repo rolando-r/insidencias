@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/apolm01-021/Desktop/insidencias/API/API.csproj": {}
+    "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\API\\API.csproj": {}
   },
   "projects": {
-    "/home/apolm01-021/Desktop/insidencias/API/API.csproj": {
+    "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/apolm01-021/Desktop/insidencias/API/API.csproj",
+        "projectUniqueName": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/home/apolm01-021/Desktop/insidencias/API/API.csproj",
-        "packagesPath": "/home/apolm01-021/.nuget/packages/",
-        "outputPath": "/home/apolm01-021/Desktop/insidencias/API/obj/",
+        "projectPath": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\roola\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/apolm01-021/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\roola\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/apolm01-021/Desktop/insidencias/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/home/apolm01-021/Desktop/insidencias/Infrastructure/Infrastructure.csproj"
+              "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -78,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/apolm01-021/Desktop/insidencias/Core/Core.csproj": {
+    "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/apolm01-021/Desktop/insidencias/Core/Core.csproj",
+        "projectUniqueName": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "/home/apolm01-021/Desktop/insidencias/Core/Core.csproj",
-        "packagesPath": "/home/apolm01-021/.nuget/packages/",
-        "outputPath": "/home/apolm01-021/Desktop/insidencias/Core/obj/",
+        "projectPath": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\roola\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/apolm01-021/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\roola\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -131,21 +131,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/apolm01-021/Desktop/insidencias/Infrastructure/Infrastructure.csproj": {
+    "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/apolm01-021/Desktop/insidencias/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/home/apolm01-021/Desktop/insidencias/Infrastructure/Infrastructure.csproj",
-        "packagesPath": "/home/apolm01-021/.nuget/packages/",
-        "outputPath": "/home/apolm01-021/Desktop/insidencias/Infrastructure/obj/",
+        "projectPath": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\roola\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/apolm01-021/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\roola\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -157,8 +157,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/apolm01-021/Desktop/insidencias/Core/Core.csproj": {
-                "projectPath": "/home/apolm01-021/Desktop/insidencias/Core/Core.csproj"
+              "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Core\\Core.csproj": {
+                "projectPath": "c:\\Users\\roola\\OneDrive\\Escritorio\\Programación\\Pruebas Campus\\insidencias\\Core\\Core.csproj"
               }
             }
           }
@@ -198,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
